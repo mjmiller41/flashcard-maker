@@ -2,7 +2,7 @@ const express = require("express");
 const { GoogleGenAI } = require("@google/genai");
 const app = express();
 const port = 3000;
-const GEMINI_API_KEY = "AIzaSyAId9-z_B7woLkXbvid9h6FqHDCQJ7yVmg";
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 
 app.use(express.json());
 app.use(express.static("public"));
